@@ -2484,7 +2484,7 @@ ai_strategy_default = {
 				scope:target_country = { is_country_type = unrecognized }
 			}
 			
-			add = 300
+			add = 150
 		}
 
 		# Higher aggression against subject/overlord if domineering or rebellious
@@ -2495,7 +2495,7 @@ ai_strategy_default = {
 					scope:target_country = { is_subject_of = root }
 				}				
 			}
-			add = 300
+			add = 150
 		}		
 		
 		# Very high aggression against pariah countries by Great Powers
@@ -2548,7 +2548,7 @@ ai_strategy_default = {
         		wants_to_solve_schleswig_holstein = yes
         		scope:target_country = { owns = s:STATE_SCHLESWIG_HOLSTEIN }
     		}	
-    		add = 100
+    		add = 1000
 		}
 
 		if = { #Carving up China
