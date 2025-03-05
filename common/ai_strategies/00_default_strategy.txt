@@ -1375,7 +1375,7 @@ ai_strategy_default = {
 					limit = {
 						scope:target_state = { state_region = s:STATE_SCHLESWIG_HOLSTEIN }				
 					}				
-					add = 25
+					add = 50
 				}
 				else = {
 					multiply = 0.2
@@ -2320,7 +2320,7 @@ ai_strategy_default = {
 					is_oppressor_of_schleswig_holstein = yes
 				}
 			}
-			add = 10
+			add = 100
 		}			
 
 		#Italian Nightmare
@@ -2475,7 +2475,7 @@ ai_strategy_default = {
 	# How likely is the AI to start a diplomatic play against another country if their attitude allows for it
 	# Using this value in other strategies will function additively
 	aggression = {
-		value = 0.15
+		value = 0.05
 		
 		# More fighting between unrecognized powers
 		if = {
