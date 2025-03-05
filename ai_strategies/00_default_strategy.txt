@@ -2320,7 +2320,7 @@ ai_strategy_default = {
 					is_oppressor_of_schleswig_holstein = yes
 				}
 			}
-			add = 100
+			add = 10
 		}			
 
 		#Italian Nightmare
@@ -2544,15 +2544,9 @@ ai_strategy_default = {
 		# Schleswig-Holstein question
 		if = {
 			limit = {
-				game_date > 1860.1.1
+				has_technology_researched = nationalism
 				wants_to_solve_schleswig_holstein = yes
-				scope:target_country = { is_country = c:HOL }
-				scope:target_country = { is_country = c:SCH }
-				scope:target_country = { is_country = c:DNM }
-				OR = {
-					wants_to_solve_schleswig_holstein = yes
-					scope:target_country = { owns = s:STATE_SCHLESWIG_HOLSTEIN }
-				}
+				scope:target_country = { owns = s:STATE_SCHLESWIG_HOLSTEIN }
 			}	
 			add = 100
 		}
@@ -6015,12 +6009,10 @@ ai_strategy_default = {
 			if = {
 				limit = { 
 					wants_to_solve_schleswig_holstein = yes
-					exists = c:HOL
-					scope:target_country = { this = c:HOL }
-					scope:target_country = { this = c:SCH }
-					can_reach_target_country = yes
+           			scope:target_country = { is_country = c:HOL }
+            		scope:target_country = { is_country = c:SCH }
 				}
-				add = 10000
+				add = 100
 			}			
 
 			min = 0
@@ -6615,17 +6607,14 @@ ai_strategy_default = {
 				
 				if = {
 					limit = {
+						has_technology_researched = nationalism
 						wants_to_solve_schleswig_holstein = yes
-						exists = c:HOL
-						exists = c:SCH
-						scope:target_country = { this = c:HOL }
-						scope:target_country = { this = c:SCH }
-						OR = {
-							scope:target_country = { this = c:HOL }
-							scope:target_country = { this = c:SCH }
+						scope:target_country = { is_country = c:HOL }
+            			scope:target_country = { is_country = c:SCH }
 						}
+					add = 100
 					}
-					add = 50000
+
 				}
 
 				if = {
@@ -6705,14 +6694,14 @@ ai_strategy_default = {
 			
 			if = {
 				limit = { 
+					has_technology_researched = nationalism
 					wants_to_solve_schleswig_holstein = yes
 					exists = c:HOL
 					exists = c:SCH
 					scope:target_country = { this = c:HOL }
 					scope:target_country = { this = c:SCH }
-					can_reach_target_country = no
 				}
-				add = 10000
+				add = 100
 			}
 			
 			# Relations with target
