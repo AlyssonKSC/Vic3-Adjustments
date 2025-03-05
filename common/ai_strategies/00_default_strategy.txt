@@ -6696,8 +6696,6 @@ ai_strategy_default = {
 				limit = { 
 					has_technology_researched = nationalism
 					wants_to_solve_schleswig_holstein = yes
-					exists = c:HOL
-					exists = c:SCH
 					scope:target_country = { this = c:HOL }
 					scope:target_country = { this = c:SCH }
 				}
