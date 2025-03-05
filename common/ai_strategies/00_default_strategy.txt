@@ -2543,12 +2543,12 @@ ai_strategy_default = {
 		
 		# Schleswig-Holstein question
 		if = {
-			limit = {
-				has_technology_researched = nationalism
-				wants_to_solve_schleswig_holstein = yes
-				scope:target_country = { owns = s:STATE_SCHLESWIG_HOLSTEIN }
-			}	
-			add = 100
+   			limit = {
+        		has_technology_researched = nationalism
+        		wants_to_solve_schleswig_holstein = yes
+        		scope:target_country = { owns = s:STATE_SCHLESWIG_HOLSTEIN }
+    		}	
+    		add = 100
 		}
 
 		if = { #Carving up China
